@@ -47,8 +47,14 @@ public class ChangeIconModule extends ReactContextBaseJavaModule implements Appl
         if (this.componentClass.isEmpty()) {
             this.componentClass = activity.getComponentName().getClassName();
         }
-        String currentIcon = this.componentClass.split("MainActivity")[1];
-        promise.resolve(currentIcon.isEmpty() ? "default" : currentIcon);
+
+        String currentIcon = "default";
+        String[] componentClassArr = this.componentClass.split("MainActivity");
+        if (componentClassArr.length > 1) {
+            currentIcon = this.componentClass.split("MainActivity")[1];
+        }
+        
+        promise.resolve(currentIcon);
         return;
     }
 
