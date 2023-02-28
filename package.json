@@ -22,7 +22,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/skb1129/react-native-change-icon",
+  "repository": "https://github.com/terryjoel/react-native-change-icon",
   "author": "Surya Kant Bansal <suryakantbansal97@gmail.com> (https://github.com/skb1129)",
   "license": "MIT",
   "peerDependencies": {

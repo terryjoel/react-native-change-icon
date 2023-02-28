@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.name         = "react-native-change-icon"
   s.version      = package["version"]
   s.summary      = package["description"]
-  s.homepage     = package["repository"]["url"]
+  s.homepage     = "https://github.com/terryjoel/react-native-change-icon"
   s.license      = package["license"]
   s.authors      = package["author"]
 
